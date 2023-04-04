@@ -1,0 +1,22 @@
+:root{
+    --headertextclr: #fff;
+}
+
+
+
+@font-face{
+    font-family: logo;
+    src: url(../FONTS/Rajdhani-SemiBold.ttf);
+}
+@font-face {
+    font-family: signika;
+    src: url(../FONTS/SignikaNegative-Regular.ttf);
+}
+@font-face {
+    font-family: abril;
+    src: url(../FONTS/AbrilFatface-Regular.ttf);
+}
+@font-face {
+    font-family: changa;
+    src: url(../FONTS/ChangaOne-Regular.ttf);
+}
