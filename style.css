@@ -1,5 +1,6 @@
 @import url(./MainCSS/root.css);
-
+@import url(./CSS/reveiws.css);
+@import url(./CSS/footerimg.css);
 *{
     padding: 0;
     margin: 0;
@@ -14,7 +15,7 @@ a{
 header{
     height: 66px;
     width: 100%;
-    background-color: RGB(9, 29, 53);
+    background-color: var(--headercolor);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -62,24 +63,7 @@ ul.services{
 .dropdown_menu{
     display: none;
 }
-.services  li:hover .dropdown_menu{
-    position: absolute;
-    display: block;
-    top: 100%;
-    left: 0;
-    max-height: 155px;
-    background-color: RGB(9, 29, 53);
-}
-.dropdown_menu ul{
-    display: block;
-    margin: 10px;
-    padding-left: 0px !important;
-}
-.dropdown_menu ul li{
-    width: 70px;
-    padding-top: 10px;
-    margin-bottom: 0 !important;
-}
+
 .dropdown_menu ul li p{
     cursor: pointer;
     color: var(--headertextclr);
@@ -271,34 +255,267 @@ h3{
     max-height: 420px;
     object-fit: cover;
 }
-#burgermenu{
+#hamburger-menu {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+#hamburger-menu span{
     display: none;
+    width: 20px;
+    height: 2px;
+    margin:5px auto;
+    position: relative;
+    background: var(--headertextclr);
+    transition: all 0.4s ease-in-out;
+}
+  
+#hamburger-menu span:last-child {
+    margin-bottom: 0;
+}
+
+
+/* .loginBox{
+    width: 40vh;
+    height: 30vh;
+    box-shadow: rgba(255, 255, 255, 0.699) 1px 1px 25px ;
+    border-radius: 10px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    z-index: 100;
+    bottom: 35vh;
+    background-color: rgba(32, 32, 32, 0.747);
+    backdrop-filter: blur(20px);
+    animation-name: loginAnimation;
+    animation-duration: 0.5s;
+}
+.loginform{
+    display: flex;
+    justify-content: center;
+    display: none;
+
+}
+
+.loginBox .box label{
+    color: var(--headertextclr);
+}
+.forgotremember{
+    margin-top: 10px;
+    display: flex;
+    gap: 18px;
+}
+#forgot{
+    color: var(--headertextclr);
+    transition: 0.5s;
+}
+#forgot:hover{
+    color: rgb(100, 100, 255);
+    transition: 0.5s ease-in-out;
+}
+#Emaillabel{
+    margin-bottom: 5px;
+}
+#remember{
+    margin-left: 2px;
+    text-align: center;
+}
+.logbutton button{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    border-style: none;
+    background-color: rgb(22, 69, 126);
+    border-radius: 10px;
+    color: var(--headertextclr);
+    transition: 0.5s;
+}
+.logbutton button:hover{
+    background-color: rgb(71, 106, 150);
+    transition: 1s;
+}
+.box{
+    margin: 0 auto;
+    width: 80%;
+    padding: 25px 0px;
+    font-family: signika;
+    color: var(--headertextclr);
+} */
+/* .box .registration{
+    margin-bottom: 0;
+}
+.registration a{
+    color: var(--headertextclr);
+    transition: 0.5s;
+}
+.registration a:hover{
+    color:rgb(100, 100, 255);
+    transition: 0.8s;
+}
+
+.xmark{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.3vh 0.5vh;
+    background-color : var(--headertextclr);
+    color: rgb(22, 69, 126);
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.xmark i{
     cursor: pointer;
 }
-#burgermenu:active{
-    display: block;
-    width: 100%;
-    background-color: rgb(9, 29, 53);
+#signupbox{
+    width: 40vh;
+    height: 45vh;
+    box-shadow: rgba(255, 255, 255, 0.699) 1px 1px 25px ;
+    border-radius: 10px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    z-index: 100;
+    bottom: 27vh;
+    background-color: rgba(32, 32, 32, 0.747);
+    backdrop-filter: blur(20px);
+    display: none; 
 }
-@media(max-width: 400px){
-    .services li{
-        display: none;
+.signup{
+    margin: 0 auto;
+    max-height: 100vh;
+    width: 80%;
+    /* padding: 25px 0px; */
+    /* font-family: signika;
+    color: var(--headertextclr);
+    animation: RegisterAnimation;
+    animation-name: 2s;
+} */
+/* .signup input{
+    margin-bottom: 3px !important;
+}
+#passlabel{
+    margin-bottom: 10px !important;
+}
+.registertext{
+    font-family: signika;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+#mail{
+    margin-bottom: 0;
+}
+#backtologin{
+    margin-left: 0.5vh;
+}
+.signtext{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signup .registration{
+    margin-bottom: 0;
+    margin-top: 5px;
+}  */
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 800px){
+    #hamburger-menu span{
+        display: block;
     }
-    .typeofdeal{
-        font-size: 1.9rem;
+    #hamburger-menu.active span:nth-child(2){
+        opacity: 0;
+    }
+    #hamburger-menu.active span:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    #hamburger-menu.active span:nth-child(3){
+        transform: translateY(-6px) rotate(-45deg);
+    }
+    .services{
+        position: fixed;
+        right: -100%;
+        top: 60px;
+        gap: 0;
+        flex-direction: column;
+        background-color: var(--headercolor);
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        transition: 0.4s;
+        padding-left: 0 !important;
+    }
+    .services li{
+        margin: 10px 0;
+    }
+    .services.active{
+        right: 0;
+    }
+    .explore h1{
+        font-size: 4.2rem !important;
+    }
+    
+}
+@media(max-width: 500px){
+    .services li:hover .dropdown_menu ul{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: -25px;
+        padding: 0 !important;
+        margin: 0 !important;
+        right: 15px;
+        width: 130px;
+        max-height: 155px;
+        background-color: var(--headercolor);
+        text-align: center;
+    }
+    .services li:hover .dropdown_menu ul li{
+        margin: 5px 0 0 0 ;
+        display: flex;
+        float: left;
+    }
+    .buyrent .pictures{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    .explore h1{
+        font-size: 3.4rem !important;
     }
     .social{
         display: none;
     }
-
-    .headermenu{
-        margin: 0;
-        display: flex;
-        justify-content: center;
-    } 
-    .headermenu #burgermenu{
-        display: block;
-        float: right;
-        z-index: 5;
+    .typeofdeal{
+        font-size: 2.5rem;
+    }
+    .buyrent{
+        margin-top: 30px;
     }
 }
+@media(max-width:280px){
+    #logotext{
+        display: none;
+    }
+    .explore h1{
+        font-size: 2.1rem !important;
+    }
+    .typeofdeal{
+        font-size: 1.8rem;
+        font-weight: 300;
+    }
+}
+

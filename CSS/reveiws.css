@@ -1,0 +1,53 @@
+@import url(./MainCSS/root.css);
+
+
+.reviewtitle{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+.reviewtitle h4{
+    font-size: 1.5rem;
+    font-weight: 200;
+    font-family: signika;
+    letter-spacing: 1px;
+    color: var(--headertextcolor);
+}
+.reviews{
+    min-height: 350px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: var(--headercolor);
+    display: grid;
+    grid-template-columns: 4fr 5fr 4fr;
+}
+.reviewbox{
+    text-align: center;
+    padding: 20px 10px;
+}
+.reviewbox p{
+    font-family: signika;
+    font-size: 1.2rem;
+    color: var(--headertextclr);
+}
+.reviewbox span{
+    font-family: logo;
+    font-size: 1.5rem;
+    color: rgba(250, 90, 90, 0.829);
+}
+
+.reviews i{
+    color: #FFF;
+}
+.reviews .np{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+.reviews div{
+    display: flex;
+    flex-direction: column;
+    margin: 0  auto;
+
+}

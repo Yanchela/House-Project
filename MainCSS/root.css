@@ -1,5 +1,6 @@
 :root{
     --headertextclr: #fff;
+    --headercolor: rgb(9, 29, 53);
 }
 
 
@@ -19,4 +20,21 @@
 @font-face {
     font-family: changa;
     src: url(../FONTS/ChangaOne-Regular.ttf);
+}
+
+@keyframes loginAnimation{
+    0%{
+        transform: translateX(300%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes RegisterAnimation{
+    0%{
+        transform: translateY(300%);
+    }
+    100%{
+        transform: translateY(0);
+    }
 }

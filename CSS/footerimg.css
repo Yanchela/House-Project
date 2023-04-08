@@ -1,0 +1,98 @@
+.reviewimg{
+    top: -10vh;
+    z-index: -1;
+    width: 100%;
+    height: 500px;
+    object-fit: contain;
+}
+.reviewimg figure{
+    position: sticky;
+    width: 100%;
+    overflow: hidden;
+}
+.reviewimg figure img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    filter: brightness(0.7) ;
+}
+
+.info{
+    top: -20vh;
+    background-color: rgb( 228,236,242 );
+    text-align: center;
+}
+.infotext p{
+    margin-bottom: 0;
+    font-size: 1.4rem;
+    font-weight: 300;
+    font-family: logo;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+    padding-top: 9vh;
+}
+.communication{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 6vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 15vh;
+}
+.communication div{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+.communication div p{
+    font-family: signika;
+    font-weight: 400;
+    line-height: 110%;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+.communication div span{
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 3vh;
+    font-family: logo;
+}
+@media(max-width:500px){
+    .communication{
+        display: grid;
+        grid-template-columns: 1fr !important;
+        text-align: center;
+    }
+    .location{
+        padding-top: 7vh;
+    }
+    .email{
+        padding-top: 7vh !important;
+    }
+    .communication div p{
+        font-size: 1rem;
+        line-height: 100%;
+    }
+    .communication div span{
+        font-size: 1.5rem;
+    }
+}
+@media(max-width:800px){
+    .communication{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+    }
+    .email{
+        padding-top: 10vh;
+    }
+    .communication div p{
+        font-size: 1rem;
+        line-height: 100%;
+    }
+    .communication div span{
+        font-size: 1.5rem;
+    }
+}
+
+
