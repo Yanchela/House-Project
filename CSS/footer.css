@@ -1,0 +1,139 @@
+@import url(../MainCSS/root.css);
+
+footer{
+    background-color: var(--headercolor);
+    color: var(--headertextclr);
+    font-family: signika;
+    min-height: 500px;
+}
+.cont{
+    width: 80%;
+    min-height: 500px; 
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 4fr 4fr;
+}
+footer p{
+    margin-bottom: 0;
+}
+.mailbox span{
+    color: red;
+}
+.footerinfo{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3vh;
+    padding-top: 6vh;
+}
+.footerinfo h5{
+    width: 50%;
+    font-size: 1.5rem;
+}
+.contactfooter{
+    top: 6vh;
+    max-height: 440px;
+    gap: 2vh;   
+}
+.contactfooter div{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+.contactfooter div.messagebox{
+    display: flex;
+    width: 100%;
+}
+.tick{
+    padding-top: 1vh;
+    padding-bottom: 0.5vh;
+}
+.tick .footertick{
+    padding-left: 3vh;
+}
+.contactfooter div.messagebox .message{
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    gap: 1vh;
+    bottom: 0;
+}
+h6{
+    font-family: logo;
+    font-size: 1.7rem;
+    margin-bottom: 0;
+}
+.user{
+    display: flex;
+    flex-direction: row;
+
+}
+footer input{
+    background-color: transparent;
+    border-style: none;
+    border-bottom: 1px solid var(--headertextclr);
+    color: var(--headertextclr);
+}
+.contactfooter label{
+    padding-top: 2vh;
+}
+.contactfooter input{
+    padding: 0.5vh 0;
+}
+.contactfooter input:active{
+    color: var(--headertextclr);
+}
+.contactfooter input:focus{
+    outline: none;
+}
+.contactfooter .message button{
+    border-radius: 6px;
+    border-style: none;
+    background-color: rgb(255, 48, 48);
+    color: var(--headertextclr);
+    font-family: logo;
+    padding: 0.5vh;
+    max-height: 50px;
+    bottom: 0;
+}
+
+.contactfooter input{
+    padding: 0 0.4vh;
+}
+.text{
+    min-height: 50px;
+    background-color: transparent;
+    border-radius: 4px;
+    border-style: none;
+    border-bottom: 1px solid var(--headertextclr);
+    color: var(--headertextclr);
+    padding: 0 0.7vh;
+    max-height: 130px;
+    outline-style: none;
+}
+
+@media(max-width:500px){
+    .footerinfo h5{
+        font-size: 1.3rem;
+    }
+    .footerinfo p{
+        font-size: 0.8rem;
+    }
+    .contactfooter{
+        justify-content: center;
+    }
+}
+@media(max-width: 360px){
+    .cont{
+        grid-template-columns: 1fr;
+    }
+    .footerinfo p{
+        font-size: 0.88rem;
+    }
+    footer{
+        min-height: 900px;
+    }
+    .contactfooter{
+        float: left;
+    }
+}

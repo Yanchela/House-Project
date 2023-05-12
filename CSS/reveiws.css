@@ -1,10 +1,15 @@
-@import url(./MainCSS/root.css);
+@import url(../MainCSS/root.css);
 
 
 .reviewtitle{
     width: 90%;
     margin: 0 auto;
     text-align: center;
+}
+.reviews div{
+    display: flex;
+    flex-direction: column;
+    margin: 0  auto;
 }
 .reviewtitle h4{
     font-size: 1.5rem;
@@ -22,9 +27,15 @@
     display: grid;
     grid-template-columns: 4fr 5fr 4fr;
 }
-.reviewbox{
+.reviews div.reviewbox{
     text-align: center;
-    padding: 20px 10px;
+    padding: 20px 10px; 
+    display: flex;
+    flex-direction: row;
+    gap: 1vh;
+    position: relative;
+    align-items: center;
+    padding-top: 6vh;
 }
 .reviewbox p{
     font-family: signika;
@@ -39,15 +50,26 @@
 
 .reviews i{
     color: #FFF;
+    cursor: pointer;
 }
 .reviews .np{
     display: flex;
     justify-content: center;
     cursor: pointer;
 }
-.reviews div{
-    display: flex;
-    flex-direction: column;
-    margin: 0  auto;
-
+.person1{
+    animation: appearanimation 1.2s;
+    animation-delay: 0.5s;
+}
+.reviewbox .person2{
+    display: none;
+    animation: appearanimation 1.2s;
+}
+.reviewbox .person3{
+    display: none;
+    animation: appearanimation 1.2s;
+}
+.reviewbox .person{
+    display: none;
+    animation: appearanimation 0.8s ease-in-out;
 }

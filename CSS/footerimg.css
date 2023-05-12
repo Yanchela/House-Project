@@ -18,7 +18,7 @@
 }
 
 .info{
-    top: -20vh;
+    margin-top: -20vh;
     background-color: rgb( 228,236,242 );
     text-align: center;
 }

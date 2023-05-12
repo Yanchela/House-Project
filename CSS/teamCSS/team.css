@@ -1,0 +1,133 @@
+@import url(../USEDCSS/header.css);
+@import url(../USEDCSS/root.css);
+@import url(../footer.css);
+@import url(../USEDCSS/burgerbar.css);
+@import url(../USEDCSS/style.css);
+@import url(../login.css);
+
+.hero figure img{
+    width: 100%;
+    object-fit: contain;
+    max-height: 220px;
+    filter: brightness();
+}
+.hero figure:after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #021020ad;
+    z-index: 1;
+}
+.imgbox{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+.hero .imgbox .imgtext{
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 2;
+}
+.imgtext span,h1{
+    color: var(--headertextclr);
+    font-family: logo;
+    letter-spacing: 0.1rem;
+}
+.imgtext span{
+    font-size: 1.3rem;
+}
+.imgtext h1{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.agents{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 60%;
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    row-gap: 7vh;
+}
+.agent{
+    margin: 0 auto;
+    max-height: 450px;
+}
+.agent span.agentName{
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: signika;
+}
+.agent img{
+    margin-top: 2vh;
+}
+.agent span.info{
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: -0.05rem;
+    font-family: signika;
+}
+.numbermail{
+    font-size: 1.1rem;
+}
+.agent2{
+    margin-top: 6vh;
+    margin-bottom: 10vh;
+}
+.linked{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.margin0{
+    margin-bottom: 0;
+}
+.linkedin{
+    font-size: 1.4rem;
+    color: red;
+    font-family: logo;
+    letter-spacing: -0.1rem;
+    font-weight: 600;
+}
+@media(max-width: 1420px){
+    .agents{
+        width: 80%;
+    }
+}
+@media(max-width: 1024px){
+    .agents{
+        width: 80%;
+        grid-template-columns: 1fr 1fr;
+    }
+    .hero figure img{
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        z-index: 1;
+    }
+}
+@media(max-width: 700px){
+    .agents{
+        width: 95%;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media(max-width: 570px){
+    .agents{
+        width: 97%;
+        grid-template-columns: 1fr;
+    }
+}
+@media(max-width: 300px){
+    .agent figure img{
+        max-width: 190px;
+    }
+}
